@@ -1,0 +1,25 @@
+counter = 0
+counter1 = 0
+def function1(guess,strings, comp,answer):
+    global counter
+    global counter1
+    print("guess the number 1-10 to win the game. ")
+    var =  input("three tries good luck! ")
+    try:
+        
+     var = int(var)
+     if var == guess:
+        counter += 1
+        print(strings, counter )
+     elif var != guess:
+        counter1 += 1
+        print(comp,counter1)
+        print(answer , guess)
+    except ValueError:
+       print("please enter a valid number")
+       
+ 
+  
+function1(3, "your score is ", "their score is ", "answer is ")
+function1(4,  "your score is ", " their score is ","answer is " )
+function1(6,   "your score is ", "their score is ","answer is " )
